@@ -1,0 +1,50 @@
+.link {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.link--active {
+  border-color: var(--active-link-border-color);
+  background-color: var(--active-link-bg);
+  color: var(--active-link-color);
+}
+
+.link--disabled {
+  border-color: var(--link-border-color);
+  background-color: var(--link-bg);
+  color: var(--link-color);
+}
+
+.link--border-radius-square {
+  border-radius: 0;
+}
+
+.link--border-radius-rounded {
+  border-radius: 5px;
+}
+
+.link--font-size-xs {
+  font-size: 0.5rem;
+}
+
+.link--font-size-s {
+  font-size: 0.75rem;
+}
+
+.link--font-size-m {
+  font-size: 1rem;
+}
+
+.link--font-size-l {
+  font-size: 1.25rem;
+}
+
+.link--font-size-xl {
+  font-size: 1.5rem;
+}

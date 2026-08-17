@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 45%;
+}
+
+.img-wrapper {
+  width: 45%;
+}
+
+.brand {
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.title {
+  color: var(--heading-color);
+  font-size: var(--h3-font-size);
+}
+
+.description {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.price {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.img {
+  display: block;
+  width: auto;
+  height: 25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: 0 auto;
+}
