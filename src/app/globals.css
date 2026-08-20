@@ -1,0 +1,61 @@
+:root {
+  --layout-bg: #ffffff;
+  --main-bg: #f8f9fa;
+  --section-bg: #ffffff;
+
+  --heading-color: #1a1a1a;
+
+  --text-color: #333333;
+
+  --label-color: #333333;
+
+  --border-color: #dddddd;
+
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.5rem;
+  --h5-font-size: 1.25rem;
+  --h6-font-size: 1rem;
+
+  --p-font-size: 1rem;
+
+  --label-font-size: 1rem;
+
+  --btn-bg: #007bff;
+  --btn-color: #ffffff;
+  --btn-border-color: #007bff;
+
+  --disabled-btn-bg: #cccccc;
+  --disabled-btn-color: #666666;
+  --disabled-btn-border-color: #aaaaaa;
+
+  --btn-font-size: 1rem;
+
+  --link-bg: #007bff;
+  --link-color: #ffffff;
+  --link-border-color: #007bff;
+
+  --active-link-bg: #cccccc;
+  --active-link-color: #666666;
+  --active-link-border-color: #aaaaaa;
+
+  --link-font-size: 1rem;
+
+  --skeleton-outer-bg: #e2e5e8;
+  --skeleton-inner-bg: #f0f2f5;
+
+  --spinner-border-color: #007bff;
+
+  --status-color: #1a1a1a;
+  --status-text-color: #333333;
+
+  --status-font-size: 2rem;
+  --status-text-font-size: 1rem;
+
+  --error-name-color: #1a1a1a;
+  --error-message-color: #333333;
+
+  --error-name-font-size: 2rem;
+  --error-message-font-size: 1rem;
+}

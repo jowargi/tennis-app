@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: var(--layout-bg);
+}
+
+body > header,
+body > main,
+body > footer {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--main-bg);
+}
+
+body > header,
+body > footer {
+  flex: 1;
+}
+
+body > main {
+  flex: 8;
+  overflow-y: auto;
+}
