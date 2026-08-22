@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.status {
+  color: var(--status-color);
+  font-size: var(--status-font-size);
+}
+
+.status-text {
+  color: var(--status-text-color);
+  font-size: var(--status-text-font-size);
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 5px;
+  background-color: var(--skeleton-outer-bg);
+}
+
+.text {
+  width: 60%;
+  height: 22px;
+  background-color: var(--skeleton-outer-bg);
+}

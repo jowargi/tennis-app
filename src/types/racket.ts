@@ -15,6 +15,7 @@ export const racketSchema = z.object({
     id: z.number(),
     name: z.string(),
   }),
+  userData: z.object({ isFavorite: z.boolean() }).nullable(),
 });
 
 export type Racket = z.infer<typeof racketSchema>;
