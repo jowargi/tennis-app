@@ -1,0 +1,12 @@
+import { FC } from "react";
+import styles from "./Spinner.module.css";
+
+const Spinner: FC = () => {
+  return (
+    <div className={styles["spinner-outer"]}>
+      <div className={styles["spinner-inner"]} />
+    </div>
+  );
+};
+
+export default Spinner;

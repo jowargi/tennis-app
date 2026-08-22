@@ -1,0 +1,24 @@
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.status {
+  color: var(--status-color);
+  font-size: var(--status-font-size);
+}
+
+.status-text {
+  color: var(--status-text-color);
+  font-size: var(--status-text-font-size);
+}

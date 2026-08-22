@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  width: 108px;
+  height: 38px;
+  background-color: var(--skeleton-outer-bg);
+}
+
+.nav {
+  width: 65px;
+  height: 40px;
+  background-color: var(--skeleton-outer-bg);
+}
+
+.list {
+  width: auto;
+  height: 288px;
+  background-color: var(--skeleton-outer-bg);
+}

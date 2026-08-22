@@ -9,6 +9,7 @@ const Header: FC = () => {
       <nav className={styles.nav}>
         <NavLink href="/">Главная</NavLink>
         <NavLink href="/rackets">Ракетки</NavLink>
+        <NavLink href="/rackets/top">Топ-10 ракеток</NavLink>
       </nav>
     </header>
   );

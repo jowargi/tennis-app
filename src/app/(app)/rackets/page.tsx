@@ -1,13 +1,12 @@
-import { FC } from "react";
-import styles from "./page.module.css";
 import RacketsCatalogContainer from "@/components/racketsCatalog/RacketsCatalogContainer";
+import RacketsCatalogSkeleton from "@/skeletons/racketsCatalog/RacketsCatalogSkeleton";
+import { FC, Suspense } from "react";
 
 const RacketsPage: FC<PageProps<"/rackets">> = () => {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.title}>Ракетки</h2>
+    <Suspense fallback={<RacketsCatalogSkeleton />}>
       <RacketsCatalogContainer />
-    </section>
+    </Suspense>
   );
 };
 
