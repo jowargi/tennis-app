@@ -3,6 +3,13 @@ import styles from "./page.module.css";
 import PaginatedRacketsCarouselContainer from "@/components/racketsCarousel/PaginatedRacketsCarouselContainer";
 import TopRacketsCarouselContainer from "@/components/racketsCarousel/TopRacketsCarouselContainer";
 import RacketsCarouselSkeleton from "@/skeletons/racketsCarousel/RacketsCarouselSkeleton";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tennis Store",
+  description:
+    "Магазин теннисных ракеток. Проверенные модели для точного контроля, мощной подачи и безупречного стиля на корте. Подберите идеальную ракетку для своей игры.",
+};
 
 const HomePage: FC<PageProps<"/">> = () => {
   return (

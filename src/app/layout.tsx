@@ -3,6 +3,7 @@ import "./globals.css";
 import "./main.css";
 import { Open_Sans } from "next/font/google";
 import { FC } from "react";
+// import NextTopLoader from "nextjs-toploader";
 
 const openSans = Open_Sans({
   subsets: ["latin", "cyrillic"],
@@ -13,7 +14,10 @@ const openSans = Open_Sans({
 const RootLayout: FC<LayoutProps<"/">> = ({ children }) => {
   return (
     <html lang="en" className={openSans.className}>
-      <body>{children}</body>
+      <body>
+        {/* <NextTopLoader color="#007bff" showSpinner={false} /> */}
+        {children}
+      </body>
     </html>
   );
 };

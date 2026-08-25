@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  color: var(--error-name-color);
+  font-size: var(--error-name-font-size);
+}
+
+.message {
+  color: var(--error-message-color);
+  font-size: var(--error-message-font-size);
+}
