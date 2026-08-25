@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.name {
+  color: var(--error-name-color);
+  font-size: var(--error-name-font-size);
+}
+
+.message {
+  color: var(--error-message-color);
+  font-size: var(--error-message-font-size);
+}

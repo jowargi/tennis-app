@@ -3,6 +3,7 @@ import { FC } from "react";
 import Img from "../img/Img";
 import NavLink from "../navLink/NavLink";
 import styles from "./RacketCard.module.css";
+import PendingLinkContent from "../pendingLinkContent/PendingLinkContent";
 
 const RacketCard: FC<{ racket: Racket }> = ({ racket }) => {
   return (
@@ -13,7 +14,7 @@ const RacketCard: FC<{ racket: Racket }> = ({ racket }) => {
           borderRadius="rounded"
           fontSize="s"
         >
-          ↗
+          <PendingLinkContent linkContent="↗" />
         </NavLink>
       </nav>
       <Img
