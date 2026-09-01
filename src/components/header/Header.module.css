@@ -11,6 +11,13 @@
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
