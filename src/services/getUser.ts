@@ -1,14 +1,12 @@
 import { BASE_API_URL } from "@/constants/api";
-import { Racket } from "@/types/racket";
 import { Response } from "@/types/response";
+import { User } from "@/types/user";
 import { cookies } from "next/headers";
 
-export const getRacketById = async (
-  racketId: Racket["id"],
-): Response<Racket> => {
+export const getUser = async (): Response<User> => {
   const cookieStore = await cookies();
 
-  const response = await fetch(`${BASE_API_URL}/product/${racketId}`, {
+  const response = await fetch(`${BASE_API_URL}/auth/user`, {
     headers: { Cookie: cookieStore.toString() },
   });
 
@@ -19,12 +17,12 @@ export const getRacketById = async (
       statusText: response.statusText,
     };
 
-  const racket = (await response.json())?.product;
+  const user = (await response.json())?.user;
 
   return {
     isError: false,
     status: response.status,
     statusText: response.statusText,
-    data: racket,
+    data: user,
   };
 };

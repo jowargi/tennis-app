@@ -1,0 +1,22 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.label {
+  color: var(--label-color);
+  font-size: var(--label-font-size);
+}
+
+.input {
+  width: 20rem;
+  height: auto;
+  padding: 0.25rem;
+  border: 1px solid var(--border-color);
+  outline: none;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: var(--p-font-size);
+}
