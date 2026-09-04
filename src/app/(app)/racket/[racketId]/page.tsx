@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { HttpError } from "@/errors/HttpError";
 import { Metadata } from "next";
 import { getRacketMetadataById } from "@/services/getRacketMetadataById";
-import FavoriteRacketToggle from "@/components/favoriteRacketToggle/FavoriteRacketToggle";
+import FavoriteToggle from "@/components/favoriteToggle/FavoriteToggle";
 
 export const generateMetadata = async ({
   params,
@@ -49,9 +49,11 @@ const RacketPage: FC<PageProps<"/racket/[racketId]">> = async ({ params }) => {
       <h2 className={styles.title}>Ракетка</h2>
       <RacketView racket={racket} />
       {racket.userData && (
-        <FavoriteRacketToggle
+        <FavoriteToggle
           racketId={racket.id}
           initialIsFavorite={racket.userData.isFavorite}
+          addLabel="Добавить в избранное"
+          removeLabel="Удалить из избранного"
         />
       )}
     </section>
