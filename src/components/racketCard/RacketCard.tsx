@@ -4,10 +4,23 @@ import Img from "../img/Img";
 import NavLink from "../navLink/NavLink";
 import styles from "./RacketCard.module.css";
 import PendingLinkContent from "../pendingLinkContent/PendingLinkContent";
+import FavoriteToggle from "../favoriteToggle/FavoriteToggle";
 
 const RacketCard: FC<{ racket: Racket }> = ({ racket }) => {
   return (
     <div className={styles.container}>
+      {racket.userData && (
+        <div className={styles.toggle}>
+          <FavoriteToggle
+            racketId={racket.id}
+            initialIsFavorite={racket.userData.isFavorite}
+            addLabel="☆"
+            removeLabel="★"
+            borderRadius="rounded"
+            fontSize="s"
+          />
+        </div>
+      )}
       <nav className={styles.nav}>
         <NavLink
           href={`/racket/${racket.id}`}

@@ -9,6 +9,12 @@
   border-radius: 5px;
 }
 
+.toggle {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
 .nav {
   position: absolute;
   right: 3px;
