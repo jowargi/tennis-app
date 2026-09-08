@@ -1,1 +1,1 @@
-export const RACKETS_PAGE_LIMIT = 20;
+export const RACKETS_PAGE_LIMIT = 5;

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.page {
+  color: var(--text-color);
+  font-size: var(--p-font-size);
+}

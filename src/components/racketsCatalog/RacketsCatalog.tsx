@@ -1,3 +1,5 @@
+"use client";
+
 import { Racket } from "@/types/racket";
 import { FC, JSX } from "react";
 import RacketCard from "../racketCard/RacketCard";
