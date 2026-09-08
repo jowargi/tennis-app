@@ -1,3 +1,5 @@
+"use client";
+
 import { Racket } from "@/types/racket";
 import { FC } from "react";
 import Img from "../img/Img";
