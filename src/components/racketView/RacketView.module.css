@@ -47,3 +47,25 @@
   border-radius: 5px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .info-wrapper {
+    width: auto;
+  }
+
+  .img-wrapper {
+    width: auto;
+  }
+
+  .img {
+    width: 80%;
+    height: auto;
+  }
+}
