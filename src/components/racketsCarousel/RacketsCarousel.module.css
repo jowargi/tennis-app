@@ -29,3 +29,11 @@
 .item {
   flex-shrink: 0;
 }
+
+@media (max-width: 480px) {
+  .list {
+    overflow-x: visible;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+}
