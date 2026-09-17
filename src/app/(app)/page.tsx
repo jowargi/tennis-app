@@ -2,8 +2,8 @@ import { FC, Suspense } from "react";
 import styles from "./page.module.css";
 import PaginatedRacketsCarouselContainer from "@/components/racketsCarousel/PaginatedRacketsCarouselContainer";
 import TopRacketsCarouselContainer from "@/components/racketsCarousel/TopRacketsCarouselContainer";
-import RacketsCarouselSkeleton from "@/skeletons/racketsCarousel/RacketsCarouselSkeleton";
 import { Metadata } from "next";
+import ResponsiveRacketsCarouselSkeleton from "@/skeletons/racketsCarousel/ResponsiveRacketsCarouselSkeleton";
 
 export const metadata: Metadata = {
   title: "Tennis Store",
@@ -21,10 +21,10 @@ const HomePage: FC<PageProps<"/">> = () => {
         мощной подачи и безупречного стиля на корте. Найдите ту самую ракетку, с
         которой каждая победа будет ощущаться иначе.
       </p>
-      <Suspense fallback={<RacketsCarouselSkeleton />}>
+      <Suspense fallback={<ResponsiveRacketsCarouselSkeleton />}>
         <PaginatedRacketsCarouselContainer page={1} limit={10} />
       </Suspense>
-      <Suspense fallback={<RacketsCarouselSkeleton />}>
+      <Suspense fallback={<ResponsiveRacketsCarouselSkeleton />}>
         <TopRacketsCarouselContainer />
       </Suspense>
     </section>
