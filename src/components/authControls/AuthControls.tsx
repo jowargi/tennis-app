@@ -1,11 +1,10 @@
-import {
-  AuthorizedComponentProps,
-  withAuthorized,
-} from "@/hocs/withAuthorized";
+"use client";
+
 import { FC } from "react";
 import NavLink from "../navLink/NavLink";
 import styles from "./AuthControls.module.css";
 import LogoutButton from "../logoutButton/LogoutButton";
+import { AuthorizedComponentProps, withAuth } from "@/hocs/withAuth";
 
 const AuthorizedComponent: FC<AuthorizedComponentProps> = ({
   authorizedUser,
@@ -29,7 +28,7 @@ const UnauthorizedComponent: FC = () => {
   );
 };
 
-const AuthControls = withAuthorized({
+const AuthControls = withAuth({
   AuthorizedComponent,
   UnauthorizedComponent,
 });
